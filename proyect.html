@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ears in peace</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/proyect.css">
+</head>
+<body class="proyecto-body">
+    <div class="cuadro-proyecto">
+        <h2 class="proyecto-titulo">TATETI</h2>
+        <img src="IMG/proyecto-1.jpg" alt="Imagen del Proyecto" class="imagen-principal">
+        
+        <div class="descripcion">
+            <h3>Integrantes: Alderete Facundo,bruno Cerrano,erika figueroa, tanya chandi,ramirez sofia 6°5 PROG</h3>
+            <p>está diseñado para ayudar a las personas que hayan sufrido una accidente físico o cognitivo mediante el juego, ayudamos a los pacientes a mejorar su concentración en el enfoque del ojo humano y que puedan tener una evaluación constante y una mejora</p>
+        </div>
+
+        <h4>Comentarios</h4>
+        <div class="estrellas interactiva">
+            <span class="estrella">&#9733;</span>
+            <span class="estrella">&#9733;</span>
+            <span class="estrella">&#9733;</span>
+            <span class="estrella">&#9733;</span>
+            <span class="estrella">&#9733;</span>
+        </div>
+        
+        <textarea id="comentario-texto" placeholder="Escribe tu comentario aquí"></textarea>
+        <button id="enviar-comentario">Enviar Comentario</button>
+        <div id="mensaje-unico" style="color: red; display: none;">Solo puedes dejar un comentario.</div>
+        
+        <div id="comentarios-lista"></div>
+    </div>
+
+<!-- Formulario de Edición -->
+<div id="overlay" class="overlay">
+    <div id="formulario-editar" class="formulario-editar">
+        <h2>Editar Comentario</h2>
+        <div class="campo">
+            <label for="editar-texto">Comentario</label>
+            <textarea id="editar-texto" placeholder="Edita tu comentario..."></textarea>
+        </div>
+        <div class="campo estrellas">
+            <label>Estrellas</label>
+            <div class="estrellas-editar">
+                <span class="estrella-editar">★</span>
+                <span class="estrella-editar">★</span>
+                <span class="estrella-editar">★</span>
+                <span class="estrella-editar">★</span>
+                <span class="estrella-editar">★</span>
+            </div>
+        </div>
+        <div class="acciones">
+            <button id="guardar-edicion">Guardar</button>
+            <button id="cerrar-edicion">Cancelar</button>
+            <button id="eliminar-comentario" class="eliminar">Eliminar</button>
+        </div>
+    </div>
+</div>
+    <script type="module" src="js/proyect.js"></script>
+</body>
+</html>

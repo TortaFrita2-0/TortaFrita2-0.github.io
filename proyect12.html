@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Detalle - Proyect2</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/proyect.css">
+</head>
+<body class="proyecto-body">
+    <div class="cuadro-proyecto">
+        <h2 class="proyecto-titulo">Detalles del Proyecto 12</h2>
+        <img src="proyecto2-foto.jpg" alt="Imagen del Proyecto 12" class="imagen-principal">
+        
+        <div class="descripcion">
+            <h3>Descripción del Proyecto 12</h3>
+            <p>Este proyecto se centra en el desarrollo de aplicaciones móviles y la integración de sistemas de back-end.</p>
+        </div>
+
+        <h4>Comentarios</h4>
+        <div class="estrellas interactiva">
+            <span class="estrella">&#9733;</span>
+            <span class="estrella">&#9733;</span>
+            <span class="estrella">&#9733;</span>
+            <span class="estrella">&#9733;</span>
+            <span class="estrella">&#9733;</span>
+        </div>
+        
+        <textarea id="comentario-texto" placeholder="Escribe tu comentario aquí"></textarea>
+        <button id="enviar-comentario">Enviar Comentario</button>
+        <div id="mensaje-unico" style="color: red; display: none;">Solo puedes dejar un comentario.</div>
+        
+        <div id="comentarios-lista"></div>
+    </div>
+
+    <!-- Formulario de Edición -->
+<div id="overlay" class="overlay">
+    <div id="formulario-editar" class="formulario-editar">
+        <h2>Editar Comentario</h2>
+        <div class="campo">
+            <label for="editar-texto">Comentario</label>
+            <textarea id="editar-texto" placeholder="Edita tu comentario..."></textarea>
+        </div>
+        <div class="campo estrellas">
+            <label>Estrellas</label>
+            <div class="estrellas-editar">
+                <span class="estrella-editar">★</span>
+                <span class="estrella-editar">★</span>
+                <span class="estrella-editar">★</span>
+                <span class="estrella-editar">★</span>
+                <span class="estrella-editar">★</span>
+            </div>
+        </div>
+        <div class="acciones">
+            <button id="guardar-edicion">Guardar</button>
+            <button id="cerrar-edicion">Cancelar</button>
+            <button id="eliminar-comentario" class="eliminar">Eliminar</button>
+        </div>
+    </div>
+</div>
+    <script type="module" src="js/proyect.js"></script>
+    <script>
+        // Configurar el ID de este proyecto como "proyect3" si no está en la URL
+        if (!window.location.search.includes('id=proyect12')) {
+            const newUrl = window.location.pathname + '?id=proyect12';
+            window.history.replaceState(null, '', newUrl);
+        }
+    </script>
+</body>
+</html>

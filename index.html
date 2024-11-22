@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="css/proyecto.css">
+    
+    <!-- Configuración de Firebase -->
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
+      import { getDatabase, ref, onValue } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js";
+
+      const firebaseConfig = {
+        apiKey: "AIzaSyAoCjv7vBfCznmoD5VmWdPq2WFH7VaTraY",
+        authDomain: "tobo-b8f82.firebaseapp.com",
+        databaseURL: "https://tobo-b8f82-default-rtdb.firebaseio.com",
+        projectId: "tobo-b8f82",
+        storageBucket: "tobo-b8f82.appspot.com",
+        messagingSenderId: "442613776186",
+        appId: "1:442613776186:web:8a9aadf6464f2540d2da03",
+        measurementId: "G-47D8YCR6F0"
+      };
+
+      // Inicializar Firebase
+      const app = initializeApp(firebaseConfig);
+      const db = getDatabase(app);
+    </script>
+    <script type="module" src="js/proyecto.js"></script> <!-- Asegúrate de que sea 'type="module"' -->
+</head>
+<body>
+    <header>
+        <div class="encabezado">
+            
+            <div class="texto-superpuesto">
+                <h1>Puntuación de Proyectos</h1>
+                <h2>Técnica 3</h2>
+            </div>
+        </div>
+    </header>
+
+    <section class="proyectos">
+        <div class="cuadro">
+            <h3>Proyectos</h3>
+            <div class="cards">
+                <!-- Primera card -->
+                <div class="card">
+                    <img src="IMG/proyecto-1.jpg" alt="Imagen Proyecto 1" class="card-imagen">
+                    <h4>TATETI</h4>
+                    <a href="proyect.html" class="boton" onclick="guardarUsuario()">Ver más</a>
+                </div>
+                <!-- Segunda card -->
+                <div class="card">
+                    <img src="IMG/proyecto0.jpg" alt="Imagen Proyecto 2" class="card-imagen">
+                    <h4>Conexión de red</h4>
+                    <a href="proyect2.html" class="boton" onclick="guardarUsuario()">Ver más</a>
+                </div>
+              <div class="card">
+                    <img src="IMG/proyecto1.jpg" alt="Imagen Proyecto 3" class="card-imagen">
+                    <h4>Página de Bingo Familiar</h4>
+                    <a href="proyect3.html" class="boton" onclick="guardarUsuario()">Ver más</a>
+                </div>
+              <div class="card">
+                    <img src="IMG/proyecto2.jpg" alt="Imagen Proyecto 4" class="card-imagen">
+                    <h4>sensor de agua</h4>
+                    <a href="proyect4.html" class="boton" onclick="guardarUsuario()">Ver más</a>
+                </div>
+              <div class="card">
+                    <img src="IMG/proyecto3.jpg" alt="Imagen Proyecto 5" class="card-imagen">
+                    <h4>Modelo de IA</h4>
+                    <a href="proyect5.html" class="boton" onclick="guardarUsuario()">Ver más</a>
+                </div>
+              <div class="card">
+                    <img src="IMG/proyecto4.jpg" alt="Imagen Proyecto 6" class="card-imagen">
+                    <h4>Super ciie</h4>
+                    <a href="proyect6.html" class="boton" onclick="guardarUsuario()">Ver más</a>
+                </div>
+              <div class="card">
+                    <img src="IMG/proyecto5.jpg" alt="Imagen Proyecto 7" class="card-imagen">
+                    <h4>Efectos moleculares</h4>
+                    <a href="proyect7.html" class="boton" onclick="guardarUsuario()">Ver más</a>
+                </div>
+              <div class="card">
+                    <img src="IMG/proyecto6.jpg" alt="Imagen Proyecto 8" class="card-imagen">
+                    <h4>PROYECTO CNC LÁSER</h4>
+                    <a href="proyect8.html" class="boton" onclick="guardarUsuario()">Ver más</a>
+                </div>
+              <div class="card">
+                    <img src="IMG/proyecto7.jpg" alt="Imagen Proyecto 9" class="card-imagen">
+                    <h4>Invasores espaciales/Under Boom</h4>
+                    <a href="proyect9.html" class="boton" onclick="guardarUsuario()">Ver más</a>
+                </div>
+              <div class="card">
+                    <img src="IMG/proyecto8.jpg" alt="Imagen Proyecto 10" class="card-imagen">
+                    <h4>Impresora 3D</h4>
+                    <a href="proyect10.html" class="boton" onclick="guardarUsuario()">Ver más</a>
+                </div>
+              <!-- Primera card -->
+                <div class="card">
+                    <img src="IMG/proyecto9.jpg" alt="Imagen Proyecto 11" class="card-imagen">
+                    <h4>CHAT BOT</h4>
+                    <a href="proyect11.html" class="boton" onclick="guardarUsuario()">Ver más</a>
+                </div>
+             
+                <!-- Otras cards de proyectos pueden añadirse de manera similar -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>

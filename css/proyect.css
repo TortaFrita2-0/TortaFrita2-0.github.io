@@ -1,0 +1,267 @@
+/* Estilo general para el cuerpo del proyecto */
+.proyecto-body {
+    background-color: navy;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+/* Cuadro que contiene el proyecto */
+.cuadro-proyecto {
+    background-color: #dcdcdc;
+    color: navy;
+    padding: 30px;
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos para los títulos */
+.proyecto-titulo {
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 5px black;
+}
+
+.descripcion-titulo {
+    font-size: 1.8rem;
+    color: white;
+    margin-top: 20px;
+    text-shadow: 1px 1px 3px black;
+}
+
+.comentarios-titulo {
+    font-size: 1.6rem;
+    color: #fff;
+    margin-top: 40px;
+    text-shadow: 1px 1px 3px black;
+}
+
+/* Estilos para las descripciones */
+.descripcion p {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 128, 0.7);
+    border-radius: 8px;
+}
+
+/* Estilo para las imágenes */
+.imagen-principal, .imagen-referencia {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%; /* Ajusta el ancho al 100% del contenedor */
+    height: auto; /* Mantiene la proporción original de la imagen */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para el área de comentarios */
+textarea {
+    width: 100%;
+    height: 80px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    color: navy;
+    background-color: white;
+    resize: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para pantallas más pequeñas */
+@media (max-width: 768px) {
+    textarea {
+        height: 120px;
+    }
+}
+
+/* Estilo para el botón de enviar comentario */
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: yellow;
+    color: navy;
+}
+
+/* Estilo de las estrellas */
+.estrellas .estrella {
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+}
+
+.estrellas .estrella.seleccionada {
+    color: yellow;
+}
+
+/* Comentarios */
+#comentarios-lista {
+    margin-top: 20px;
+    width: 80%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comentario {
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    color: navy;
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.comentario .estrellas-comentario {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+/* Estilo del botón para borrar comentarios */
+button.borrar {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 0.8rem;
+}
+
+button.borrar:hover {
+    background-color: darkred;
+}
+
+/* Estilos para el formulario de edición */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.formulario-editar {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 500px; /* Limitamos el tamaño */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transform: translateY(-100px);
+    transition: transform 0.3s ease-in-out;
+}
+
+.formulario-editar h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.campo {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.campo textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    resize: none;
+    font-size: 14px;
+    color: #333;
+    height: 100px;
+    box-sizing: border-box;
+}
+
+.estrellas-editar {
+    font-size: 24px;
+    cursor: pointer;
+    color: #ddd;
+    margin-top: 10px;
+}
+
+.estrellas-editar .estrella-editar.seleccionada {
+    color: #ffbf00;
+}
+
+.acciones {
+    display: flex;
+    justify-content: space-between;
+}
+
+.acciones button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.acciones button:hover {
+    background-color: #45a049;
+}
+
+#cerrar-edicion {
+    background-color: #f44336;
+}
+
+#cerrar-edicion:hover {
+    background-color: #e53935;
+}
+
+.overlay.show .formulario-editar {
+    transform: translateY(0);
+}
+
+/* Estilo para el botón eliminar */
+.acciones #eliminar-comentario {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.acciones #eliminar-comentario:hover {
+    background-color: #e53935;
+}

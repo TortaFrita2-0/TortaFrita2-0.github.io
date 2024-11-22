@@ -1,0 +1,138 @@
+/* Estilos globales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: navy;
+    color: #dcdcdc;
+}
+
+/* Encabezado */
+.encabezado {
+    position: relative;
+    text-align: center;
+    height: 300px;
+    overflow: hidden;
+}
+
+.encabezado-imagen {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.texto-superpuesto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #dcdcdc;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para mejor legibilidad */
+}
+
+h2 {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Sección de proyectos */
+.proyectos {
+    padding: 40px 0;
+}
+
+.cuadro {
+    background-color: #dcdcdc; /* Color de fondo del cuadro */
+    margin: 5px auto;
+    padding: 10px;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Títulos del cuadro */
+.cuadro h3 {
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    color: navy;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-wrap: wrap; /* Permite que las cards se ajusten automáticamente a varias filas */
+    gap: 20px; /* Espacio entre las cards */
+    justify-content: space-between; /* Espacio equitativo entre las cards */
+}
+
+.card {
+    background-color: navy;
+    border-radius: 10px;
+    padding: 15px;
+    width: calc(33.33% - 20px); /* Tres tarjetas por fila */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #dcdcdc;
+    transition: transform 0.3s ease;
+}
+
+/* Ajustar el tamaño de las imágenes dentro de las cards */
+.card img {
+    width: 100%;
+    height: 250px; /* Controlar la altura de las imágenes */
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción, recortando el exceso si es necesario */
+    border-radius: 10px;
+}
+
+.card h4 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #dcdcdc;
+}
+
+.boton {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #dcdcdc;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.boton:hover {
+    background-color: yellow;
+    color: navy;
+}
+
+/* Animación al hacer click */
+.boton:active {
+    transform: scale(0.95);
+}
+
+/* Estilo responsive para pantallas medianas (tablets, etc.) */
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* Dos tarjetas por fila en pantallas medianas */
+    }
+}
+
+/* Estilo responsive para pantallas pequeñas (móviles) */
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* Una tarjeta por fila en pantallas pequeñas */
+    }
+}
